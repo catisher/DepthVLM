@@ -310,6 +310,7 @@ def main():
     model = Qwen3VLForConditionalGeneration.from_pretrained(
         args.model_path,
         torch_dtype=torch.bfloat16,
+        #attn_implementation="flash_attention_2",这个用不了
         attn_implementation="sdpa",
         device_map="auto",
     )
