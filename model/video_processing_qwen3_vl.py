@@ -22,9 +22,12 @@ from transformers.feature_extraction_utils import BatchFeature
 from transformers.image_utils import ChannelDimension, PILImageResampling, SizeDict, get_image_size
 from transformers.processing_utils import Unpack, VideosKwargs
 from transformers.utils import TensorType, add_start_docstrings, logging
-from transformers.video_processing_utils import BASE_VIDEO_PROCESSOR_DOCSTRING, BaseVideoProcessor
+try:
+    from transformers.video_processing_utils import BASE_VIDEO_PROCESSOR_DOCSTRING, BaseVideoProcessor
+except ImportError:
+    from transformers.video_processing_utils import BaseVideoProcessor
+    BASE_VIDEO_PROCESSOR_DOCSTRING = ""
 from transformers.video_utils import VideoMetadata, group_videos_by_shape, reorder_videos
-
 
 logger = logging.get_logger(__name__)
 

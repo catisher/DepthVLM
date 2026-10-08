@@ -17,7 +17,8 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-from transformers.configuration_utils import PretrainedConfig as PreTrainedConfig
+from transformers.configuration_utils import PreTrainedConfig  
+#as PreTrainedConfig
 from transformers.modeling_rope_utils import RopeParameters
 
 
