@@ -889,7 +889,7 @@ class Qwen3VLTextModel(Qwen3VLPreTrainedModel):
             config=self.config,
             inputs_embeds=inputs_embeds,
             attention_mask=attention_mask,
-            cache_position=cache_position,
+            #cache_position=cache_position,
             past_key_values=past_key_values,
             position_ids=text_position_ids,
         )
