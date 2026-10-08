@@ -1,1 +1,36 @@
 .DS_Store
+
+# Generated project files
+FILES.md
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Model checkpoints & outputs
+checkpoint-*/
+*.pt
+*.pth
+*.safetensors
+output/
+test-output/
+
+# TensorBoard & logs
+runs/
+*.log
+events.out.tfevents.*
+
+# Dataset annotations (large generated JSONLs)
+annotations/
